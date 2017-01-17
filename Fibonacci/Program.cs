@@ -28,7 +28,7 @@ namespace Fibonacci
                 Console.WriteLine("En la posición 1 tenemos que el primer número es 0 y el segundo número es 1 y como resultado da 1, seguimos sumando:");
                 for (int i = 0; i < posicion - 1; ++i)
                 {
-                    Console.WriteLine("Pos #" + (i + 2) + ") " + r.Numerator + " + " + lr.Numerator + " = " + (lr + r).Numerator);
+                    Console.WriteLine("Pos #" + (i + 2) + ") " + r.Numerator.FormatString() + " + " + lr.Numerator.FormatString() + " = " + (lr + r).Numerator.FormatString());
                     BigRational v = lr;
                     lr = r + lr;
                     r = v;
